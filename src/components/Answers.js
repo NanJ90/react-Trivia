@@ -6,7 +6,7 @@ export class Answers extends Component {
 		let answer = this.props.option;
 		let listItems;
 		if(answer !== undefined) {
-			listItems = answer.map((item) => (
+			listItems = answer.sort().map((item) => (
 				<div key={item}>
 						<input type="radio" value={item} />{item}
 				</div>

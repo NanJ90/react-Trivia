@@ -20,7 +20,8 @@ export class Questions extends Component {
 		// console.log(this.props.option); // array
 		// console.log(typeof this.props.option); //object
 		return (
-			<div>Question:
+			<div>
+				Question <span>{this.state.click+1}</span>.
 				<ul>
 					{this.props.question[this.state.click]}
 					<Answers option={this.props.option[this.state.click]}/>
