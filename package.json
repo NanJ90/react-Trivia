@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.18.2",
     "es6-promise": "^4.1.1",
+    "express": "^4.16.2",
     "html-entities": "^1.2.1",
     "isomorphic-fetch": "^2.2.1",
+    "materialize-css": "^0.100.2",
+    "mongoose": "^4.13.6",
+    "morgan": "^1.9.0",
     "node-fetch": "^1.7.3",
+    "nodemon": "^1.12.4",
+    "passport": "^0.4.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
@@ -15,6 +22,25 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NanJ90/react-trivia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NanJ90/react-trivia/issues"
+  },
+  "homepage": "https://github.com/NanJ90/react-trivia#readme"
 }

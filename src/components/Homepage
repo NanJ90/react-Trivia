@@ -1,0 +1,26 @@
+import React, {Component} from 'react';
+
+export class Homepage extends Component {
+  handleClick(){
+    
+  }
+render(){
+  return(
+    <div Class="row">
+      <form Class="col s6">
+
+  </form>
+
+    <form Class="col s6">
+ <fieldset>
+  <legend>Create a new account:</legend>
+  Email: <input type="text"/><br/>
+  Password: <input type="text"/>
+ </fieldset>
+ <button onClick={this.handleClick}>SIGNUP</button>
+</form>
+</div>
+  )
+}
+
+}
