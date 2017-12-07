@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 
 //DB setup
 // mongoose.connect('mongodb://localhost/trivia', {useMongoClient:true});
-var promise = mongoose.connect('mongodb://localhost/myapp', {
+var promise = mongoose.connect('mongodb://localhost/trivia', {
   useMongoClient: true,
   /* other options */
 });
