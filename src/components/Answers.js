@@ -34,17 +34,17 @@ export class Answers extends Component {
 	}
 
 	render() {
-		// let answer = this.props.option;
-		// let listItems;
-		// if(answer !== undefined) {
-		// 	listItems = answer.sort().map((item, i) => (
-		// 		<div key={item}>
-		// 				<input type="radio" value={item} checked ={i === 0} onChange={this.handleOptionChange}/>{item}
-		// 		</div>
-		// 	));
-			// }else {
-		// 		answer = null;
-		// 	}
+		let answer = this.props.option;
+		let listItems;
+		if(answer !== undefined) {
+			listItems = answer.sort().map((item, i) => (
+				<div key={item}>
+						<input type="radio" value={item} checked ={item === this.state.selectedOption} onChange={this.handleOptionChange}/>{item}
+				</div>
+			));
+			}else {
+				answer = null;
+			}
 
 		return (
 			<form>
@@ -53,7 +53,7 @@ export class Answers extends Component {
 							<input type="radio" value={item} checked ={item === this.state.defaultAnswer} onChange={this.handleOptionChange}/>{item}
 					</div>
 				))}
-				{/* {listItems} */}
+				{listItems}
 
 			</form>
 		)
